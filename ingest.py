@@ -13,7 +13,8 @@ except Exception:
 
 collection = chroma_client.create_collection(name=collection_name)
 
-def load_and_populate_chroma(filepath="documents.jsonl"):
+# Change this line in ingest.py:
+def load_and_populate_chroma(filepath="samples/documents.jsonl"):
     with open(filepath, "r", encoding="utf-8") as f:
         lines = f.readlines()
 

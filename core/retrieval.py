@@ -16,7 +16,7 @@ chroma_client = chromadb.PersistentClient(path="./chroma_db")
 collection = chroma_client.get_collection(name="medguard_docs")
 
 # Load raw documents for BM25 and metadata lookup
-def load_raw_docs(filepath="documents.jsonl"):
+def load_raw_docs(filepath="samples/documents.jsonl"):
     docs = {}
     with open(filepath, "r", encoding="utf-8") as f:
         for line in f:

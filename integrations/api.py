@@ -4,7 +4,7 @@ from typing import List
 import logging
 
 # Import the compiled LangGraph app from main.py
-from main import app as langgraph_app
+from core.main import app as langgraph_app
 
 app = FastAPI(
     title="MedGuard AI API",

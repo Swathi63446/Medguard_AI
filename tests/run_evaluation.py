@@ -9,7 +9,7 @@ load_dotenv()
 client = genai.Client()
 
 API_URL = "http://127.0.0.1:8000/ask"
-TEST_QUESTIONS_FILE = "test_questions.jsonl"
+TEST_QUESTIONS_FILE = "samples/test_questions.jsonl"
 if not os.path.exists(TEST_QUESTIONS_FILE):
     if os.path.exists("medguard_ai_dataset/test_questions.jsonl"):
         TEST_QUESTIONS_FILE = "medguard_ai_dataset/test_questions.jsonl"
