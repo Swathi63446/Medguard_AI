@@ -1,0 +1,10 @@
+.venv/
+chroma_db/
+.env
+__pycache__/
+*.xlsx
+.git
+.gitignore
+README.md
+MedGuard_AI_Assignment.pdf
+.DS_Store
