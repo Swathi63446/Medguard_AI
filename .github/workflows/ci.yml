@@ -26,4 +26,4 @@ jobs:
 
     - name: Verify Python Syntax & Compilation
       run: |
-        python -m py_compile api.py main.py retrieval.py ingest.py streamlit_app.py run_evaluation.py
+        python -m py_compile integrations/api.py core/main.py core/retrieval.py ingest.py integrations/streamlit_app.py tests/run_evaluation.py
